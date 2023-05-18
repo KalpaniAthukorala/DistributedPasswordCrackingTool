@@ -1,7 +1,7 @@
-import time
-import json
 import requests
 from random import randint
+import time
+import json
 
 
 def create_node_id():
@@ -9,9 +9,8 @@ def create_node_id():
     node_id = millis + randint(800000000000, 900000000000)
     return node_id
 
-
-# This method is used to register the service in the service registry
-def register_service(name, port, node_id):
+#method is used to register the service in the consul
+def services_registration(name, port, node_id):
     url = "http://localhost:8500/v1/agent/service/register"
     data = {
         "Name": name,
@@ -95,7 +94,7 @@ def ready_for_election(ports_of_all_nodes, self_election, self_coordinator):
         return True
 
 
-# this method is used to get the details of all the nodes by syncing with each node by calling each nodes' API.
+# This method is used to synchronize and retrieve details from all nodes.
 def get_details(ports_of_all_nodes):
     node_details = []
     for each_node in ports_of_all_nodes:
@@ -105,8 +104,8 @@ def get_details(ports_of_all_nodes):
     return node_details
 
 
-# this method is used to announce that it is the master to the other nodes.
-def announce(coordinator):
+# use this method to communicate master
+def communicate_master(coordinator):
     all_nodes = get_ports_of_nodes()
     data = {
         'coordinator': coordinator

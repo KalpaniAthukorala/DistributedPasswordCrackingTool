@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
-from util import register_service, get_ports_of_nodes, create_node_id, get_higher_nodes, election, \
-    announce, ready_for_election, get_details, check_health_of_the_service
+import re
+from util import services_registration, get_ports_of_nodes, create_node_id, get_higher_nodes, election, \
+    communicate_master, ready_for_election, get_details, check_health_of_the_service
 from bully_algorithm import Bully
 import threading
 import time
@@ -13,9 +14,10 @@ import logging
 counter = Value('i', 0)
 app = Flask(__name__)
 
+
 # verifying if port number and node name have been entered as command line arguments.
-port_number = int(sys.argv[1])
-assert port_number
+port_num = int(sys.argv[1])
+assert port_num
 
 node_name = sys.argv[2]
 assert node_name
@@ -27,13 +29,16 @@ logging.basicConfig(filename=f"logs/{node_name}.log", level=logging.INFO)
 learner_result_array = []
 
 node_id = create_node_id()
-bully = Bully(node_name, node_id, port_number)
+bully = Bully(node_name, node_id, port_num)
 
 # register service in the Service Registry
-service_register_status = register_service(node_name, port_number, node_id)
+service_register_status = services_registration(node_name, port_num, node_id)
 
-
-def init(wait=True):
+def initialize_election(wait=True):
+    '''
+    Initialize the election process and check if there is an election in progress. If not, start the election and 
+    proceed with the algorithm.
+    '''
     if service_register_status == 200:
         ports_of_all_nodes = get_ports_of_nodes()
         del ports_of_all_nodes[node_name]
@@ -56,25 +61,90 @@ def init(wait=True):
             if len(higher_nodes_array) == 0:
                 bully.coordinator = True
                 bully.election = False
-                announce(node_name)
+                communicate_master(node_name)
                 print('Coordinator is : %s' % node_name)
                 print('**********End of election**********************')
-                # Read the password from the password.txt file
+                # Read all the passwords from the password.txt file
                 with open("password.txt", "r") as f:
-                    password = f.read().strip()
+                    passwords = f.read().splitlines()
 
                 # Ask the user for input password
                 user_input = input("Enter your password: ")
 
-                # Check if the input password matches the saved password
-                if user_input == password:
+                # Check if the input password matches any of the saved passwords
+                if user_input in passwords:
                     print("Password is correct")
                 else:
                     print("Incorrect password")
+                    suggest_passwords(passwords)
+
             else:
                 election(higher_nodes_array, node_id)
     else:
         print('Service registration is not successful')
+
+
+def suggest_passwords(passwords):
+    '''
+    Suggest alternative passwords based on the saved passwords.
+    '''
+    user_input = input("Enter your password: ")
+
+    # Find the most similar password from the list
+    most_similar_password = find_most_similar_password(user_input, passwords)
+
+    if most_similar_password:
+        suggestions = generate_password_suggestions(most_similar_password)
+        print("Suggested passwords based on the most similar password '%s':" % most_similar_password)
+        for suggestion in suggestions:
+            print("- %s" % suggestion)
+    else:
+        print("No similar passwords found. Please try a different password.")
+
+
+def find_most_similar_password(user_input, passwords):
+    '''
+    Find the most similar password to the user input from the list of passwords.
+    You can customize this function to implement a similarity metric suitable for your needs.
+    '''
+    most_similar_password = None
+    max_similarity_score = 0
+
+    for password in passwords:
+        similarity_score = calculate_similarity(user_input, password)
+        if similarity_score > max_similarity_score:
+            max_similarity_score = similarity_score
+            most_similar_password = password
+
+    return most_similar_password
+
+
+def calculate_similarity(password1, password2):
+    '''
+    Calculate the similarity score between two passwords.
+    You can customize this function to implement a similarity metric suitable for your needs.
+    '''
+    # Example similarity calculation: Number of common letters divided by the total number of letters
+    common_letters = len(set(password1) & set(password2))
+    similarity_score = common_letters / max(len(password1), len(password2))
+    return similarity_score
+
+
+def generate_password_suggestions(password):
+    '''
+    Generate password suggestions based on the provided password.
+    You can customize this function to generate meaningful suggestions.
+    '''
+    suggestions = []
+    # Generate suggestions based on the provided password
+    # You can customize the suggestions based on your specific requirements
+    if not bool(re.search(r'[A-Z]', password)):
+        suggestions.append(password + "A")
+    if not bool(re.search(r'[^a-zA-Z0-9]', password)):
+        suggestions.append(password + "!")
+    if not bool(re.search(r'[a-z]', password)):
+        suggestions.append(password.lower() + "a")
+    return suggestions
 
 
 # this api is used to exchange details with each node
@@ -88,17 +158,14 @@ def get_node_details():
     return jsonify({'node_name': node_name_bully, 'node_id': node_id_bully, 'coordinator': coordinator_bully,
                     'election': election_bully, 'port': port_number_bully}), 200
 
-'''
-This API checks if the incoming node ID is grater than its own ID. If it is, it executes the init method and 
-sends an OK message to the sender. The execution is handed over to the current node. 
-'''
+#This API compares the ID of the incoming node with its own ID. If the incoming node's ID is greater than its own, the API executes the init method and sends an OK message to the sender. The execution then continues on the incoming node. Otherwise, the API does not execute any further actions.
 @app.route('/response', methods=['POST'])
 def response_node():
     data = request.get_json()
     incoming_node_id = data['node_id']
     self_node_id = bully.node_id
     if self_node_id > incoming_node_id:
-        threading.Thread(target=init, args=[False]).start()
+        threading.Thread(target=initialize_election, args=[False]).start()
         bully.election = False
     return jsonify({'Response': 'OK'}), 200
 
@@ -112,19 +179,14 @@ def announce_coordinator():
     print('Coordinator is %s ' % coordinator)
     return jsonify({'response': 'OK'}), 200
 
-'''
-When nodes are sending the election message to the higher nodes, all the requests comes to this proxy. As the init
-method needs to execute only once, it will forward exactly one request to the responseAPI. 
-'''
-
-
+#The proxy receives all election messages from nodes that are attempting to initiate an election. Since the init method should only be executed once, the proxy forwards only the first request it receives to the responseAPI. The responseAPI then executes the init method and sends an OK message back to the sender, signaling that the current node has been elected as the new leader.
 @app.route('/proxy', methods=['POST'])
 def proxy():
     with counter.get_lock():
         counter.value += 1
         unique_count = counter.value
 
-    url = 'http://localhost:%s/response' % port_number
+    url = 'http://localhost:%s/response' % port_num
     if unique_count == 1:
         data = request.get_json()
         requests.post(url, json=data)
@@ -137,13 +199,13 @@ def check_coordinator_health():
     threading.Timer(60.0, check_coordinator_health).start()
     health = check_health_of_the_service(bully.coordinator)
     if health == 'crashed':
-        init()
+        initialize_election()
     else:
         print('Coordinator is alive')
 
 
-timer_thread1 = threading.Timer(15, init)
+timer_thread1 = threading.Timer(15, initialize_election)
 timer_thread1.start()
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=port_number)
+    app.run(host='127.0.0.1', port=port_num)
