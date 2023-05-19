@@ -12,3 +12,15 @@ INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug:127.0.0.1 - - [13/May/2023 10:38:22] "GET /nodeDetails HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [13/May/2023 10:38:34] "GET /nodeDetails HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [13/May/2023 10:38:37] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5002
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 19:20:31] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 19:20:44] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 19:20:50] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 19:20:50] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 19:21:04] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 19:21:06] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 19:21:08] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 19:21:15] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [18/May/2023 19:23:23] "GET /nodeDetails HTTP/1.1" 200 -

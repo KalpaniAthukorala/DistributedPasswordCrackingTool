@@ -105,7 +105,6 @@ def suggest_passwords(passwords):
 def find_most_similar_password(user_input, passwords):
     '''
     Find the most similar password to the user input from the list of passwords.
-    You can customize this function to implement a similarity metric suitable for your needs.
     '''
     most_similar_password = None
     max_similarity_score = 0
@@ -122,7 +121,6 @@ def find_most_similar_password(user_input, passwords):
 def calculate_similarity(password1, password2):
     '''
     Calculate the similarity score between two passwords.
-    You can customize this function to implement a similarity metric suitable for your needs.
     '''
     # Example similarity calculation: Number of common letters divided by the total number of letters
     common_letters = len(set(password1) & set(password2))
@@ -133,11 +131,9 @@ def calculate_similarity(password1, password2):
 def generate_password_suggestions(password):
     '''
     Generate password suggestions based on the provided password.
-    You can customize this function to generate meaningful suggestions.
     '''
     suggestions = []
     # Generate suggestions based on the provided password
-    # You can customize the suggestions based on your specific requirements
     if not bool(re.search(r'[A-Z]', password)):
         suggestions.append(password + "A")
     if not bool(re.search(r'[^a-zA-Z0-9]', password)):
