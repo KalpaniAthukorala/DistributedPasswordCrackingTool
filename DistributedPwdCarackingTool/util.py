@@ -1,12 +1,13 @@
 import requests
-from random import randint
+import uuid
 import time
 import json
 
 
 def create_node_id():
     millis = int(round(time.time() * 1000))
-    node_id = millis + randint(800000000000, 900000000000)
+    random_id = uuid.uuid4().int
+    node_id = millis + random_id
     return node_id
 
 #method is used to register the service in the consul
