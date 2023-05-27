@@ -76,7 +76,15 @@ def initialize_election(wait=True):
                     print("Password is correct")
                 else:
                     print("Incorrect password")
+                    suggestions = generate_password_suggestions(user_input)
+                    print("Suggested password must include %s" % suggestions)
                     suggest_passwords(passwords)
+                    # Ask the user for input password
+                    user_input = input("Enter your password: ")
+
+                    # Check if the input password matches any of the saved passwords
+                    if user_input in passwords:
+                        print("Password is correct")
 
             else:
                 election(higher_nodes_array, node_id)
@@ -94,10 +102,8 @@ def suggest_passwords(passwords):
     most_similar_password = find_most_similar_password(user_input, passwords)
 
     if most_similar_password:
-        suggestions = generate_password_suggestions(most_similar_password)
         print("Suggested passwords based on the most similar password '%s':" % most_similar_password)
-        for suggestion in suggestions:
-            print("- %s" % suggestion)
+
     else:
         print("No similar passwords found. Please try a different password.")
 
@@ -135,11 +141,11 @@ def generate_password_suggestions(password):
     suggestions = []
     # Generate suggestions based on the provided password
     if not bool(re.search(r'[A-Z]', password)):
-        suggestions.append(password + "A")
+        suggestions.append("use capital letters")
     if not bool(re.search(r'[^a-zA-Z0-9]', password)):
-        suggestions.append(password + "!")
+        suggestions.append("use special characters")
     if not bool(re.search(r'[a-z]', password)):
-        suggestions.append(password.lower() + "a")
+        suggestions.append("use simple letters")
     return suggestions
 
 

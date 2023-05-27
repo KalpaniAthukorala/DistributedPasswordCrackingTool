@@ -54,7 +54,6 @@ def get_ports_of_nodes():
         ports_dict[key] = value
     return ports_dict
 
-
 def get_higher_nodes(node_details, node_id):
     higher_node_array = []
     for each in node_details:

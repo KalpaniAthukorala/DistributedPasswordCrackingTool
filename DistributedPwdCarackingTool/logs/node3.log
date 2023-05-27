@@ -23,3 +23,230 @@ INFO:werkzeug:127.0.0.1 - - [25/May/2023 19:54:45] "GET /nodeDetails HTTP/1.1" 2
 INFO:werkzeug:127.0.0.1 - - [25/May/2023 19:54:47] "GET /nodeDetails HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [25/May/2023 19:54:51] "GET /nodeDetails HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [25/May/2023 19:54:57] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:00:07] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:00:18] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:00:23] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:00:27] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:00:33] "POST /response HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:00:33] "POST /proxy HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:00:46] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:34:00] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:34:03] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:34:14] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:34:15] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:34:21] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:34:24] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:34:28] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 09:34:34] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:07:59] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:08:07] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:08:10] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:08:14] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:08:17] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:08:27] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:08:32] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:08:34] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:08:35] "POST /response HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:08:35] "POST /proxy HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:08:38] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:08:40] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:08:44] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:08:50] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:58:41] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:58:53] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:58:55] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:59:01] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:59:01] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 11:59:08] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 12:08:43] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:15:40] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:15:46] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:15:56] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:16:00] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:16:00] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:20:50] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:21:02] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:22:25] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:22:30] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:22:44] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:22:45] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:22:52] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:22:56] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:23:00] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:26:24] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:26:28] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:26:35] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:26:35] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:26:41] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:26:48] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:26:48] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:26:56] "POST /response HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:26:56] "POST /proxy HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:26:59] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:27:00] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:27:05] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:27:06] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:27:11] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:29:09] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:29:13] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:29:22] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:29:29] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:29:35] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:29:38] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:29:39] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:29:43] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:29:46] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:29:50] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:29:58] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:33:55] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:34:08] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:35:49] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:35:56] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:36:02] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:36:03] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:36:09] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:36:13] "POST /response HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:36:13] "POST /proxy HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:36:13] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:36:18] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:36:19] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:36:23] "POST /proxy HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 15:36:31] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:02:29] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:02:34] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:02:43] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:02:47] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:02:50] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:02:55] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:02:56] "POST /response HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:02:56] "POST /proxy HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:02:58] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:03:04] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:03:06] "POST /proxy HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:03:16] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:39:36] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:39:43] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:39:50] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:39:51] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:39:58] "POST /response HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:39:58] "POST /proxy HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:40:02] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:40:03] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:40:07] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:40:13] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:40:19] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:49:39] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:49:47] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:49:51] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:50:01] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:50:02] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:50:04] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:50:09] "POST /response HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:50:09] "POST /proxy HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:50:12] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:50:15] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:50:19] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:50:21] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:50:25] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:55:35] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:55:40] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:55:47] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:55:53] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:55:54] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:56:01] "POST /response HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:56:01] "POST /proxy HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:56:03] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:56:03] "POST /proxy HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:56:04] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:56:07] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:56:09] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:56:13] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:56:17] "POST /proxy HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 16:56:17] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:02:56] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:02:58] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:03:06] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:03:13] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:03:19] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:03:20] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:03:24] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:03:35] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:03:41] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:03:47] "POST /announce HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:09:05] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:09:10] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:09:18] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:09:22] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:09:23] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:09:32] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:09:33] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:09:38] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:09:39] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:09:39] "GET /nodeDetails HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/May/2023 17:09:47] "POST /announce HTTP/1.1" 200 -
